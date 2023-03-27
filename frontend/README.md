@@ -9,8 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 4. MongoDB
 5. TailwindCSS
 6. Axios
-7. NextAuth 
-
+7. NextAuth
 ```
 
 ## Iniciando o seu projeto
