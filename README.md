@@ -10,7 +10,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 5. TailwindCSS
 6. Axios
 7. NextAuth 
-
+8. NestJS
+9. Passport
+10. Dotenv
 ```
 
 ## Iniciando o seu projeto
