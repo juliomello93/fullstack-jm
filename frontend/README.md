@@ -9,8 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 4. MongoDB
 5. TailwindCSS
 6. Axios
-7. NextAuth 
-
+7. NextAuth
 ```
 
 ## Iniciando o seu projeto
@@ -39,3 +38,4 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
