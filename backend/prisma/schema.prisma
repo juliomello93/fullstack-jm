@@ -1,14 +1,14 @@
-datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
-}
-
 generator client {
   provider = "prisma-client-js"
 }
 
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
 model User {
-  id        String     @id @default(auto()) @map("_id") @db.ObjectId
+  id        String     @id @default(uuid())
   name      String
   email     String     @unique
   username  String     @unique
@@ -22,13 +22,14 @@ model User {
 }
 
 model Contacts {
-  id           String @id @default(auto()) @map("_id") @db.ObjectId
-  userId       String @db.ObjectId
-  User         User?  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id           String @id @default(uuid())
   contactId    String
   contactName  String
   contactEmail String @unique
   contactPhone String
+
+  userId String @unique
+  User   User?  @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("contacts")
 }
